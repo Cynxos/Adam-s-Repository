@@ -1,19 +1,27 @@
+def decrypt_matrix(matrix):
+    rows = len(matrix)
+    cols = len(matrix[0])
+    decrypted_message = ""
+    for col in range(cols):
+        for row in range(rows):
+            char = matrix[row][col]
+            if char.isalpha():
+                decrypted_message += char
+            elif decrypted_message and decrypted_message[-1].isalpha():
+                decrypted_message += " "
+    decrypted_message = decrypted_message.strip()
+    return decrypted_message
+
 matrix = [
-    "7ii",
-    "Tsx",
-    "h%?",
-    "i #",
-    "sM ",
-    "$a ",
-    "#t%",
-    "^r!"
+    ['7', 'i', 'i'],
+    ['T', 's', 'x'],
+    ['h', '%', '?'],
+    ['i', ' ', '#'],
+    ['s', 'M', ' '],
+    ['$', 'a', ' '],
+    ['#', 't', '%'],
+    ['^', 'r', '!']
 ]
 
-hidden_message = ""
-
-for col in range(len(matrix[0])):
-    for row in matrix:
-        if row[col].isalnum():
-            hidden_message += row[col]
-
-print("Hidden message:", hidden_message)
+message = decrypt_matrix(matrix)
+print(message)
