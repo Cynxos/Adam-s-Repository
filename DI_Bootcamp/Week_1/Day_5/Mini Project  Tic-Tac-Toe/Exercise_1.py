@@ -4,7 +4,6 @@ def print_board(board):
         print("-" * 5)
 
 def check_winner(board, mark):
-    # Check rows, columns, and diagonals for a win
     for row in board:
         if all(s == mark for s in row):
             return True
@@ -41,5 +40,4 @@ def tic_tac_toe():
         else:
             print("This spot is already taken. Try again.")
 
-# Start the game
 tic_tac_toe()
