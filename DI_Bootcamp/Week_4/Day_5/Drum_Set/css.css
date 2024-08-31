@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.key {
+    border: 0.4rem solid black;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: all 0.07s ease;
+    width: 10rem;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.key:active {
+    transform: scale(0.98);
+    background: #e0e0e0;
+}
+
+.key kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.key .sound {
+    font-size: 1.2rem;
+    color: #888;
+}
