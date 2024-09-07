@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form methods="POST">
+        <input type="text" placeholder="Name" name="a"/>
+        <input type="password" placeholder="Password" name="b"/>
+        <input type="submit" value="Send" />
+    </form>
+    <H2>Get A User</H2>
+    <form methods="GET" action="https://jsonplaceholdert.typicode.com/users">
+        <input type="number" name="id" />
+        <input type="submit"/>
+    </form>
+
+    <!-- 
+    Google Search
+    -->
+    <h2>Google Search</h2>
+    <form method="GET" action="https://www.google.com/search">
+        <input name="q"/>
+        <input type="submit"/>
+    </form>
+
+    <h2>Add a Post</h2>
+    <form method="POST" action="https://jsonplaceholder.typicode.com/posts">
+        <input name="userId" placeholder="User ID"/>
+        <input name="title" placeholder="Name"/>
+        <input name="body" placeholder="Body"/>
+        <input type="submit" value="Send A Post Request"/>
+    </form>
+
+    <h2> Post Request</h2>
+    <form method="POST" action="https://users-18kl.onrender.com/user">
+        <input name="name" placeholder="Name"/>
+        <input name="email" placeholder="Email"/>
+        <input type="username" placeholder="Username"/>
+        <input type="submit" value="Send A Post Request"/>
+    </form>
+</body>
+</html>
