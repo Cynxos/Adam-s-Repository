@@ -27,3 +27,16 @@ body {
     color: red;
     margin-top: 20px;
 }
+
+#characterInfo {
+    margin-top: 20px;
+    margin: 5px 0;
+}
+
+#characterInfo p {
+    margin: 5px 0;
+}
+
+#characterInfo strong {
+    font-weight: bold;
+}
