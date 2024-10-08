@@ -1,0 +1,24 @@
+.age-controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px #999;
+    transition: 0.3s;
+    align-content: center;
+  }
+  
+  .age-controls button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .age-controls button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  

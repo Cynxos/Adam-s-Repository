@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
