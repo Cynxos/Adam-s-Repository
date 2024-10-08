@@ -1,0 +1,16 @@
+.user-data {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .user-data h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .user-data p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
